@@ -1,3 +1,4 @@
 import pandas as pd
 import matplotlib
-df = pd.read_csv(,)
+url = 'https://github.com/heyifei/pandas/blob/master/pandas/io/tests/data/banklist.csv'
+df = pd.read_csv(url,)
