@@ -1,4 +1,17 @@
 import pandas as pd
 import matplotlib
+from mpl_toolkits.basemap import Basemap
+
+
+m = Basemap(width=12000000,height=9000000,projection='lcc',
+            resolution='c',lat_1=45.,lat_2=55,lat_0=50,lon_0=-107.)
+m.drawcoastlines()
+m.drawmapboundary(fill_color='aqua')
+m.fillcontinents(color='coral',lake_color='aqua')
+
 url = 'https://github.com/heyifei/pandas/blob/master/pandas/io/tests/data/banklist.csv'
 df = pd.read_csv(url,)
+
+
+
+plt.show()
