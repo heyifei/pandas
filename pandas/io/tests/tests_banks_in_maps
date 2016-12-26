@@ -9,6 +9,7 @@ m = Basemap(width=12000000,height=9000000,projection='lcc',
 m.drawcoastlines()
 m.drawmapboundary(fill_color='aqua')
 m.fillcontinents(color='coral',lake_color='aqua')
+m.drawstates()
 
 url = 'https://github.com/heyifei/pandas/blob/master/pandas/io/tests/data/banklist.csv'
 df = pd.read_csv(url,)
